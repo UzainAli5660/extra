@@ -1,0 +1,85 @@
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;  /* Fixed the left positioning */
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center; /* Centers the modal horizontally */
+  align-items: center; /* Centers the modal vertically */
+  z-index: 10; /* Makes sure the modal appears above other content */
+}
+
+.modal-content {
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  width: 400px; /* Width of the modal */
+  position: relative; /* To position the close button inside the modal */
+}
+
+.close {
+  position: absolute; /* Positioning the button inside the modal */
+  top: 10px; /* 10px from the top */
+  right: 10px; /* 10px from the right */
+  background-color: black; /* Red background for the close button */
+  color: white;
+  border: none;
+  font-size: 18px; /* Slightly larger font size for visibility */
+  cursor: pointer;
+  padding: 5px 10px; /* Adding padding to make the button clickable */
+  border-radius: 50%; /* Make the button round */
+}
+
+/* Optional: Close button hover effect */
+.close:hover {
+  background-color: darkred; /* Change background color on hover */
+}
+/* Add this to App.css or a separate CSS file */
+.quiz-container {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.option {
+  display: block;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f7f7f7;
+}
+
+.option.wrong {
+  background-color: red;
+  color: white;
+}
+
+.option.correct {
+  background-color: green;
+  color: white;
+}
+
+.quiz-result {
+  text-align: center;
+  padding: 20px;
+}
+
+.quiz-result button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz-result button:hover {
+  background-color: #45a049;
+}
